@@ -10,9 +10,9 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     FooterComponent
   ],
-  imports: [
-    CommonModule
-  ],
+    imports: [
+        CommonModule,
+    ],
   exports: [
     HeaderComponent,
     FooterComponent,
