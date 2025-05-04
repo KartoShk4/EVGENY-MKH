@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { SharedModule } from "./shared/shared.module";
 import { MainComponent } from './views/main/main.component';
 import {RouterModule} from "@angular/router";
+import {ProjectCardComponent} from "./views/main/project-card/project-card.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
+    ProjectCardComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
