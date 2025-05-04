@@ -1,15 +1,23 @@
 @font-face {
-  src: url("../fonts/UbuntuSans-Medium.ttf");
-  font-family: "UbuntuSans";
-  font-weight: 500;
+  src: url("../fonts/dayssansblack.ttf");
+  font-family: "Dayssansblack";
 }
+
 @font-face {
-  src: url("../fonts/UbuntuSans-Regular.ttf");
-  font-family: "UbuntuSans";
+  src: url("../fonts/Lato-Bold.ttf");
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/Lato-Regular.ttf");
+  font-family: "Lato";
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/dayssansblack.ttf");
-  font-family: "Dayssansblack";
+  src: url("../fonts/Lato-Light.ttf");
+  font-family: "Lato";
+  font-weight: 300;
 }
+

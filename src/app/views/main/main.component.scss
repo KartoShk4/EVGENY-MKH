@@ -1,0 +1,145 @@
+.greetings {
+  height: 67vh;
+
+  .container {
+    .greetings-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .greetings-text {
+        max-width: 726px;
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        font-size: 58px;
+        color: #D9D9D9;
+
+        span {
+          background: linear-gradient(to left, #E70FAA, #13B0F5 70%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .greetings-image {
+        width: 349px;
+        height: 349px;
+        border: 9px solid transparent;
+        background: linear-gradient(to top, #00C0FD, #E70FAA 60%) border-box;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.tech {
+  padding-bottom: 206px;
+
+  .container {
+    text-align: center;
+
+
+    .tech-icons {
+      display: grid;
+      grid-template-columns: repeat(6, 120px);
+      gap: 105px;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
+
+.project {
+  padding-bottom: 197px;
+
+  .container {
+    text-align: center;
+
+    .project-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 375px);
+      gap: 47px;
+
+      .project-card {
+        border-radius: 20px;
+        padding-bottom: 18px;
+        background-color: #363636;
+        width: 375px;
+
+        .project-card-image {
+          padding-bottom: 27px;
+        }
+
+        .project-card-title {
+          font-family: Lato, sans-serif;
+          font-weight: 400;
+          font-size: 28px;
+          color: #CCCCCC;
+          padding: 0 28px 17px 28px;
+        }
+
+        .project-card-text {
+          font-family: Lato, sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          color: #CCCCCC;
+          line-height: 26px;
+          padding: 0 28px 12px 28px;
+          text-align: center;
+        }
+
+        .project-card-tech {
+          color: #CCCCCC;
+          font-size: 16px;
+          font-family: Lato, sans-serif;
+          font-weight: 400;
+          padding-bottom: 21px;
+
+          span {
+            font-family: Lato, sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+          }
+        }
+
+        .project-card-action {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 28px 0 28px;
+
+          .project-card-action-link {
+            display: flex;
+            align-items: center;
+
+            svg {
+              padding-right: 10px;
+            }
+
+            a {
+              font-family: Lato, sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              text-decoration: none;
+              color: white;
+              transition: all .3s;
+
+              &:hover {
+                background: linear-gradient(to left, #E70FAA, #13B0F5 70%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
