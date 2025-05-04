@@ -45,6 +45,18 @@
           }
         }
       }
+
+      .socials {
+        padding-left: 67px;
+
+        .socials-item {
+          a {
+            img {
+              width: 24px;
+            }
+          }
+        }
+      }
     }
   }
 }
