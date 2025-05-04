@@ -4,19 +4,25 @@
 }
 
 @font-face {
-  src: url("../fonts/Lato-Bold.ttf");
-  font-family: "Lato";
+  src: url("../fonts/FiraSans-Bold.ttf");
+  font-family: "FiraSans";
   font-weight: 700;
 }
 
 @font-face {
-  src: url("../fonts/Lato-Regular.ttf");
-  font-family: "Lato";
+  src: url("../fonts/FiraSans-Medium.ttf");
+  font-family: "FiraSans";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../fonts/FiraSans-Regular.ttf");
+  font-family: "FiraSans";
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/Lato-Light.ttf");
+  src: url("../fonts/FiraSans-Light.ttf");
   font-family: "Lato";
   font-weight: 300;
 }

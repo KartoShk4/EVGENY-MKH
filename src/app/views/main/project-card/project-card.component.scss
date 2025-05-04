@@ -4,6 +4,9 @@
   gap: 47px;
 
   .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 20px;
     padding-bottom: 18px;
     background-color: #363636;
@@ -14,7 +17,7 @@
 
     .project-card-image {
       width: 100%;
-      padding-bottom: 27px;
+      padding-bottom: 15px;
       overflow: hidden;
       border-radius: 20px 20px 0 0;
 
@@ -35,15 +38,15 @@
     }
 
     .project-card-title {
-      font-family: Lato, sans-serif;
-      font-weight: 400;
-      font-size: 28px;
+      font-family: FiraSans, sans-serif;
+      font-weight: 500;
+      font-size: 25px;
       color: #CCCCCC;
       padding: 0 28px 17px 28px;
     }
 
     .project-card-text {
-      font-family: Lato, sans-serif;
+      font-family: FiraSans, sans-serif;
       font-weight: 300;
       font-size: 18px;
       color: #CCCCCC;
@@ -53,14 +56,14 @@
     }
 
     .project-card-tech {
-      color: #CCCCCC;
+      color: #7e7e7e;
       font-size: 16px;
-      font-family: Lato, sans-serif;
+      font-family: FiraSans, sans-serif;
       font-weight: 400;
-      padding-bottom: 21px;
+      padding: 0 28px 21px 28px;
 
       span {
-        font-family: Lato, sans-serif;
+        font-family: FiraSans, sans-serif;
         font-weight: 300;
         font-size: 14px;
       }
@@ -81,7 +84,7 @@
         }
 
         a {
-          font-family: Lato, sans-serif;
+          font-family: FiraSans, sans-serif;
           font-size: 16px;
           font-weight: 400;
           text-decoration: none;
