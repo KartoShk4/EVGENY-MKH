@@ -13,7 +13,7 @@ export class ProjectCardComponent {
 
   projects: ProjectCardType[] = [
     {
-      imageUrl: '../assets/images/pages/card/cookies.png',
+      imageUrl: 'assets/images/pages/card/cookies.png',
       title: 'COOKIES',
       description: 'Уютный лендинг с домашним печеньем, описанием продукции, процессом приготовления и отзывами. Адаптивный дизайн.',
       technologies: 'HTML, SCSS, TypeScript, Angular',
@@ -21,7 +21,7 @@ export class ProjectCardComponent {
       codeLink: 'https://github.com/KartoShk4/cookies'
     },
     {
-      imageUrl: '../assets/images/pages/card/burgers.png',
+      imageUrl: 'assets/images/pages/card/burgers.png',
       title: 'BURGER HOUSE',
       description: 'Стильный лендинг бургерной с меню, акциями и отзывами. Адаптивный, с ярким дизайном и удобной навигацией.',
       technologies: 'HTML, SCSS, Angular, TypeScript',
@@ -29,7 +29,7 @@ export class ProjectCardComponent {
       codeLink: 'https://github.com/KartoShk4/barbershop'
     },
     {
-      imageUrl: '../assets/images/pages/card/macaroons.png',
+      imageUrl: 'assets/images/pages/card/macaroons.png',
       title: 'MACAROONS',
       description: 'Лендинг для продажи макарунов с описанием видов, преимуществами и отзывами. Адаптивный и стильный дизайн.',
       technologies: 'HTML, Less, JavaScript',
@@ -37,7 +37,7 @@ export class ProjectCardComponent {
       codeLink: 'https://github.com/KartoShk4/macaroons'
     },
     {
-      imageUrl: '../assets/images/pages/card/barbershop.jpg',
+      imageUrl: 'assets/images/pages/card/barbershop.jpg',
       title: 'BARBERSHOP',
       description: 'Современный одностраничный сайт с акцентом на стильный мужской дизайн. Содержит информацию об услугах, преимуществах, ценах и мастерах.',
       technologies: 'HTML, SCSS, JavaScript',
@@ -45,7 +45,7 @@ export class ProjectCardComponent {
       codeLink: 'https://github.com/KartoShk4/barbershop'
     },
     {
-      imageUrl: '../assets/images/pages/card/pizza.jpg',
+      imageUrl: 'assets/images/pages/card/pizza.jpg',
       title: 'PIZZA CHEFF',
       description: 'Лендинг пиццерии с меню, акциями и отзывами. Яркий дизайн, адаптивная верстка и удобная навигация.',
       technologies: 'HTML, CSS, JavaScript',
@@ -53,7 +53,7 @@ export class ProjectCardComponent {
       codeLink: 'https://github.com/KartoShk4/pizza'
     },
     {
-      imageUrl: '../assets/images/pages/card/kappadokia.png',
+      imageUrl: 'assets/images/pages/card/kappadokia.png',
       title: 'KAPPADOKIA',
       description: 'Лендинг о Каппадокии с описанием достопримечательностей, туров и фото. Адаптивный и красочный дизайн.',
       technologies: 'HTML, CSS',
