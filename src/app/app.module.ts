@@ -11,6 +11,7 @@ import { AboutComponent } from './views/about/about.component';
 import { WorkExperienceComponent } from './views/about/work-experience/work-experience.component';
 import { EducationComponent } from './views/about/education/education.component';
 import { TechComponent } from './views/main/tech/tech.component';
+import { ContactsComponent } from './views/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TechComponent } from './views/main/tech/tech.component';
     WorkExperienceComponent,
     EducationComponent,
     TechComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
