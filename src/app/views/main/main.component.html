@@ -2,7 +2,7 @@
   <div class="container">
     <div class="greetings-block">
       <div class="greetings-text">
-        <p>Привет 👋,<br>Меня зовут <span>Евгений</span><br>Я Frontend — разработчик</p>
+        <p>Привет 👋,<br>Меня зовут <span class="greetings-text-name">Евгений</span><br><span class="greetings-text-name" [appTyped]="['Я Frontend — developer','Я Frontend — разработчик']"></span></p>
       </div>
       <div class="greetings-image">
         <img src="../../../assets/images/pages/greetings.jpg" alt="myPhoto">
@@ -14,7 +14,7 @@
   <div class="container">
     <div class="title">Мой стек технологий</div>
     <div class="subtitle">Технологии, с которыми я недавно работал</div>
-<tech-component></tech-component>
+    <tech-component></tech-component>
   </div>
 </section>
 <section class="project" id="project">

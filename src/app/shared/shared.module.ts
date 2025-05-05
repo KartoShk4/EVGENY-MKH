@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterLinkWithHref } from "@angular/router";
 import {TagColorPipe} from "./pipes/tagColorPipe";
+import {TypedDirective} from "./directives/typed.directive";
 
 
 
@@ -11,7 +12,8 @@ import {TagColorPipe} from "./pipes/tagColorPipe";
   declarations: [
     HeaderComponent,
     FooterComponent,
-    TagColorPipe
+    TagColorPipe,
+    TypedDirective,
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,7 @@ import {TagColorPipe} from "./pipes/tagColorPipe";
     HeaderComponent,
     FooterComponent,
     TagColorPipe,
+    TypedDirective,
   ]
 })
 export class SharedModule { }

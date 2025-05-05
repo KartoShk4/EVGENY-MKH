@@ -9,17 +9,21 @@
       align-items: center;
 
       .greetings-text {
-        max-width: 726px;
+        max-width: 734px;
         font-family: FiraSans, sans-serif;
         font-weight: 500;
         font-size: 58px;
         color: #D9D9D9;
 
-        span {
+        .greetings-text-name {
           background: linear-gradient(to left, #E70FAA, #13B0F5 70%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+
+        .greetings-text-name span {
+          color: #D9D9D9 !important;
         }
       }
 
