@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-dark-color;
 }
@@ -17,6 +21,7 @@ body {
 .socials {
   display: flex;
   gap: 20px;
+
   .socials-item {
     a {
       text-decoration: none;

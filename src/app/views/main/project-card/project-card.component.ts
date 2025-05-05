@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {ProjectCardType} from "../../../types/project-card.type";
+import {ProjectCardType} from "../../../../types/project-card.type";
 
 @Component({
   selector: 'project-card-component',

@@ -1,5 +1,6 @@
 .greetings {
   height: 67vh;
+  padding-top: 220px;
 
   .container {
     .greetings-block {
@@ -43,15 +44,6 @@
 
   .container {
     text-align: center;
-
-
-    .tech-icons {
-      display: grid;
-      grid-template-columns: repeat(6, 120px);
-      gap: 105px;
-      align-items: center;
-      justify-items: center;
-    }
   }
 }
 

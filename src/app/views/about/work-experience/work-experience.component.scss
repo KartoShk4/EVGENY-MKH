@@ -1,0 +1,63 @@
+.work-experience-items {
+  max-width: 704px;
+
+  .work-experience-item {
+    padding-top: 38px;
+    border-bottom: 2px solid #EBEAED;
+
+    .work-experience-item-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: FiraSans, sans-serif;
+
+      .title-work {
+        letter-spacing: 1px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #666666;
+      }
+
+      .title-work-time {
+        border-radius: 100px;
+        padding: 10px 30px;
+        background-color: #D7FFE0;
+        color: #018C0F;
+        font-weight: 600;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+
+    .work-experience-item-block-info {
+      display: flex;
+      align-items: center;
+      padding-top: 4px;
+      padding-bottom: 24px;
+      color: #A7A7A7;
+      font-family: FiraSans, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 1px;
+
+      .work-experience-item-block-info-data {
+        align-items: center;
+        width: 200px;
+        padding-right: 22px;
+
+        span {
+          padding-top: 2px;
+          padding-right: 4px;
+          margin: 0;
+        }
+
+        &:last-child {
+          padding-left: 143px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

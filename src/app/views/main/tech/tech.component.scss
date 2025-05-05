@@ -1,0 +1,14 @@
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  gap: 96px;
+  align-items: center;
+  justify-items: center;
+
+  .tech-icon {
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
