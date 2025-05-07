@@ -1,5 +1,7 @@
 <div class="tech-icons">
-  <div class="tech-icon" *ngFor="let tech of techs">
+  <div class="tech-icon"
+       *ngFor="let tech of techs"
+       [appTilt]="{ max: 25, speed: 2000, 'gyroscope': true, 'glare-prerender': false }">
     <img [src]="tech.imageUrl" [alt]="tech.name">
   </div>
 </div>

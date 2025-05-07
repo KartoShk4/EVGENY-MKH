@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterLinkWithHref } from "@angular/router";
 import {TagColorPipe} from "./pipes/tagColorPipe";
 import {TypedDirective} from "./directives/typed.directive";
+import {TiltDirective} from "./directives/tilt.directive";
 
 
 
@@ -14,6 +15,7 @@ import {TypedDirective} from "./directives/typed.directive";
     FooterComponent,
     TagColorPipe,
     TypedDirective,
+    TiltDirective,
   ],
   imports: [
     CommonModule,
@@ -24,6 +26,7 @@ import {TypedDirective} from "./directives/typed.directive";
     FooterComponent,
     TagColorPipe,
     TypedDirective,
+    TiltDirective,
   ]
 })
 export class SharedModule { }
