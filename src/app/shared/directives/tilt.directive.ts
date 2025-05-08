@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import VanillaTilt from 'vanilla-tilt';
 
-// 👇 Здесь описываем расширенный тип
+
 interface VanillaTiltHTMLElement extends HTMLElement {
   vanillaTilt?: {
     destroy: () => void;
@@ -13,7 +13,7 @@ interface VanillaTiltHTMLElement extends HTMLElement {
 })
 export class TiltDirective implements OnInit, OnDestroy {
   @Input('appTilt') tiltOptions: any;
-  private element: VanillaTiltHTMLElement;
+  private readonly element: VanillaTiltHTMLElement;
 
   constructor(private el: ElementRef) {
     this.element = el.nativeElement;
@@ -21,10 +21,9 @@ export class TiltDirective implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     VanillaTilt.init(this.element, this.tiltOptions || {
-      max: 15,
-      speed: 400,
+      max: 25,
+      speed: 2000,
       scale: 1,
-      'glare-prerender': false,
       'gyroscope': true
     });
   }

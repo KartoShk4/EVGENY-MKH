@@ -12,3 +12,15 @@
     }
   }
 }
+
+// MEDIA
+
+@media (max-width: 1024px) {
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+}

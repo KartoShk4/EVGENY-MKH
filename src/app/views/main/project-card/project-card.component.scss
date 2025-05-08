@@ -102,3 +102,12 @@
     }
   }
 }
+
+// MEDIA
+
+@media (max-width: 1024px) {
+  .project-cards {
+    grid-template-columns: repeat(2, 375px);
+    justify-content: center;
+  }
+}

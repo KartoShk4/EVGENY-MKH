@@ -59,4 +59,19 @@
   }
 }
 
+// MEDIA
+
+@media (max-width: 1024px) {
+  .greetings-text {
+    margin-left: 30px;
+    font-size: 50px !important;
+  }
+
+  .greetings-image {
+    margin-right: 30px;
+    width: 280px !important;
+    height: 280px !important;
+  }
+}
+
 

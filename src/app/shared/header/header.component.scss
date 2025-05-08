@@ -65,6 +65,18 @@
 // Мобильная адаптация (max-width)
 @media (max-width: 1024px) {
   .header {
-    padding: 20px 15px;
+    padding: 20px 30px;
+
+    .logo {
+      img {
+        width: 150px !important;
+      }
+    }
+
+    .nav-item {
+      a {
+        font-size: 14px !important;
+      }
+    }
   }
 }

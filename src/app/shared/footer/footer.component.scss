@@ -89,3 +89,33 @@
     }
   }
 }
+
+// MEDIA
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 20px 30px;
+
+    .logo {
+      img {
+        width: 150px !important;
+      }
+    }
+
+    .footer-top-info {
+      .footer-top-info-action {
+        font-size: 10px !important;
+      }
+    }
+  }
+
+  .nav-item {
+    a {
+      font-size: 10px !important;
+    }
+  }
+
+  .rights {
+    font-size: 10px !important;
+  }
+}
