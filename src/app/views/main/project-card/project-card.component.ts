@@ -25,8 +25,8 @@ export class ProjectCardComponent {
       title: 'BURGER HOUSE',
       description: 'Стильный лендинг бургерной с меню, акциями и отзывами. Адаптивный, с ярким дизайном и удобной навигацией.',
       technologies: 'HTML, SCSS, Angular, TypeScript',
-      siteLink: 'https://kartoshk4.github.io/barbershop/',
-      codeLink: 'https://github.com/KartoShk4/barbershop'
+      siteLink: 'https://kartoshk4.github.io/burger/',
+      codeLink: 'https://github.com/KartoShk4/burger'
     },
     {
       imageUrl: 'assets/images/pages/card/macaroons.png',
