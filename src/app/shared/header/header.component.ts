@@ -1,38 +1,75 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'header-component',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-
+export class HeaderComponent implements OnDestroy {
+  // По умолчанию меню закрыто.
   menuOpen: boolean = false;
 
+  // Переключаем состояние меню - открыто\закрыто
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
-    // Блокируем/разблокируем скролл
-    if (this.menuOpen) {
-      document.body.classList.add('lock');
-    } else {
-      document.body.classList.remove('lock');
-    }
+    // Вызываем функцию - блокировки\разблокировки скролла в меню
+    this.updateBodyLock();
   }
 
-  // Закрываем меню при клике на ссылку (для мобильной версии)
+  // Принудительно закрываем меню
   closeMenu(): void {
     this.menuOpen = false;
-    document.body.classList.remove('lock');
+    // Вызываем функцию - блокировки\разблокировки скролла в меню
+    this.updateBodyLock();
   }
 
-  // Закрываем меню при изменении размера экрана (если стало больше 768px)
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any): void {
-    if (window.innerWidth > 768) {
-      this.menuOpen = false;
-      document.body.classList.remove('lock');
+  // Функция - блокировки\разблокировки скролла в меню
+  private updateBodyLock(): void {
+    if (this.menuOpen) {
+      // Фиксируем меню при блокировке скролла
+      this.lockBody();
+    } else {
+      this.unlockBody();
     }
   }
+
+  // Функция блокировки скролла
+  private lockBody(): void {
+    const scrollY: number = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
+  }
+
+  // Функция разблокировки скролла
+  private unlockBody(): void {
+    const scrollY: number = parseInt(document.body.style.top || '0');
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    document.body.style.transition = 'none';
+
+    // Включает плавный переход
+    requestAnimationFrame((): void => {
+      document.body.style.transition = 'transform 0.3s ease';
+      window.scrollTo({
+        top: Math.abs(scrollY),
+        behavior: 'smooth'
+      });
+    });
+
+  }
+
+  // Обработка размера окна, для мобильного меню.
+  @HostListener('window:resize')
+  onResize(): void {
+    if (window.innerWidth > 768 && this.menuOpen) {
+      this.closeMenu();
+    }
+  }
+
+  // Важно разблокировать body при уничтожении компонента
+  ngOnDestroy(): void {
+    this.unlockBody();
+  }
 }
-
-

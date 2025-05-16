@@ -156,5 +156,10 @@
         transform: translateY(0);
       }
     }
+
+    .nav {
+      flex-direction: row-reverse;
+      padding: 0 20px;
+    }
   }
 }
