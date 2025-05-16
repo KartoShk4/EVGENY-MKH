@@ -1,27 +1,23 @@
 <header class="header">
   <div class="container">
     <nav class="nav">
+      <div class="burger" (click)="toggleMenu()" [class.active]="menuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div class="logo">
         <img src="assets/images/logo-white.png" alt="logo">
       </div>
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a routerLink="/">Главная</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/about">Обо мне</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="['/']" fragment="tech">Скиллы</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="['/']" fragment="project">Проекты</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/contacts">Контакты</a>
-        </li>
+      <ul class="nav-items" [class.open]="menuOpen">
+        <li class="nav-item"><a routerLink="/" (click)="closeMenu()">Главная</a></li>
+        <li class="nav-item"><a routerLink="/about" (click)="closeMenu()">Обо мне</a></li>
+        <li class="nav-item"><a routerLink="['/']" fragment="tech" (click)="closeMenu()">Скиллы</a></li>
+        <li class="nav-item"><a routerLink="['/']" fragment="project" (click)="closeMenu()">Проекты</a></li>
+        <li class="nav-item"><a routerLink="/contacts" (click)="closeMenu()">Контакты</a></li>
       </ul>
-      <div class="socials">
+      <div class="socials" [class.open]="menuOpen">
         <div class="socials-item">
           <a href="https://github.com/KartoShk4" target="_blank">
             <img src="assets/images/icons/github.png" alt="github-icon">

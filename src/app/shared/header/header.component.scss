@@ -2,6 +2,32 @@
   padding-top: 41px;
 
   .container {
+    .header-icon {
+      display: block;
+      width: 30px;
+      height: 18px;
+      position: relative;
+      z-index: 5;
+      cursor: pointer;
+
+      span {
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+
+        &:first-child {
+          top: 0;
+        }
+
+        &:last-child {
+          bottom: 0;
+        }
+      }
+    }
+
     .nav {
       display: flex;
       align-items: center;
@@ -28,7 +54,7 @@
             font-weight: 500;
             font-size: 17px;
             line-height: 26px;
-            background-image: linear-gradient(currentColor, currentColor);
+            background-image: linear-gradient(to left, #E70FAA, #13B0F5);
             background-position: 0 100%;
             background-size: 0 2px;
             padding-bottom: 2px;
@@ -62,20 +88,72 @@
 
 // MEDIA
 
-// Мобильная адаптация (max-width)
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header {
-    padding: 20px 30px;
+    position: relative;
 
-    .logo {
-      img {
-        width: 150px !important;
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 22px;
+      cursor: pointer;
+      z-index: 10;
+
+      span {
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+      }
+
+      &.active span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+      }
+
+      &.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      &.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
       }
     }
 
-    .nav-item {
-      a {
-        font-size: 14px !important;
+    .nav-items,
+    .socials {
+      display: none;
+      flex-direction: column;
+      justify-content: center !important;
+      background: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100vh;
+      padding: 20px 0;
+      text-align: center;
+      gap: 16px;
+      z-index: 5;
+      margin-top: 0;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+
+      &.open {
+        display: flex;
+        transform: translateY(0);
+      }
+    }
+
+    .socials {
+      top: auto;
+      bottom: 0;
+      height: auto;
+      padding-bottom: 40px;
+      transform: translateY(100%);
+
+      &.open {
+        transform: translateY(0);
       }
     }
   }

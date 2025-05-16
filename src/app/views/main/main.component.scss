@@ -74,4 +74,26 @@
   }
 }
 
+@media (max-width: 768px) {
+  .greetings {
+    padding-top: 120px;
+    height: 30vh;
+
+    .greetings-text {
+      margin-left: 25px;
+      font-size: 38px !important;
+    }
+
+    .greetings-image {
+      margin-right: 30px;
+      width: 200px !important;
+      height: 200px !important;
+    }
+  }
+
+  .tech {
+    padding-bottom: 150px;
+  }
+}
+
 
