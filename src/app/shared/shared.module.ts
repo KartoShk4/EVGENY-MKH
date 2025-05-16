@@ -6,6 +6,7 @@ import { RouterLinkWithHref } from "@angular/router";
 import { TagColorPipe } from "./pipes/tagColorPipe";
 import { TypedDirective } from "./directives/typed.directive";
 import { TiltDirective } from "./directives/tilt.directive";
+import { NotFoundComponent } from "./not-found/not-found.component";
 
 
 
@@ -16,6 +17,8 @@ import { TiltDirective } from "./directives/tilt.directive";
     TagColorPipe,
     TypedDirective,
     TiltDirective,
+    NotFoundComponent,
+
   ],
   imports: [
     CommonModule,
@@ -27,6 +30,7 @@ import { TiltDirective } from "./directives/tilt.directive";
     TagColorPipe,
     TypedDirective,
     TiltDirective,
+    NotFoundComponent,
   ]
 })
 export class SharedModule { }

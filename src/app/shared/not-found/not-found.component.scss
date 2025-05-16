@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background: linear-gradient(45deg, #2c7873,#52de97);
+  height: 100vh;
+}
+
+#parallax-container{
+  position: absolute;
+  top:10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 10px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  background: url("/assets/images/pages/bg404.png"), #151729;
+  box-shadow: 0 15px 30px rgba(0,0,0,.5);
+}
+
+#parallax-container .content{
+  max-width: 600px;
+  text-align: center;
+}
+
+#parallax-container .content h2{
+  font-size: 16vw;
+  color: #fff;
+  line-height: 1em;
+  margin-top: 25px;
+  text-shadow: -3px -3px 0 #2c7873,-3px -2px 0 #2c7873,-3px -1px 0 #2c7873,-3px 0px 0 #2c7873,-3px 1px 0 #2c7873,-3px 2px 0 #2c7873,-3px 3px 0 #2c7873,-2px -3px 0 #2c7873,-2px -2px 0 #2c7873,-2px -1px 0 #2c7873,-2px 0px 0 #2c7873,-2px 1px 0 #2c7873,-2px 2px 0 #2c7873,-2px 3px 0 #2c7873,-1px -3px 0 #2c7873,-1px -2px 0 #2c7873,-1px -1px 0 #2c7873,-1px 0px 0 #2c7873,-1px 1px 0 #2c7873,-1px 2px 0 #2c7873,-1px 3px 0 #2c7873,0px -3px 0 #2c7873,0px -2px 0 #2c7873,0px -1px 0 #2c7873,0px 0px 0 #2c7873,0px 1px 0 #2c7873,0px 2px 0 #2c7873,0px 3px 0 #2c7873,1px -3px 0 #2c7873,1px -2px 0 #2c7873,1px -1px 0 #2c7873,1px 0px 0 #2c7873,1px 1px 0 #2c7873,1px 2px 0 #2c7873,1px 3px 0 #2c7873,2px -3px 0 #2c7873,2px -2px 0 #2c7873,2px -1px 0 #2c7873,2px 0px 0 #2c7873,2px 1px 0 #2c7873,2px 2px 0 #2c7873,2px 3px 0 #2c7873,3px -3px 0 #2c7873,3px -2px 0 #2c7873,3px -1px 0 #2c7873,3px 0px 0 #2c7873,3px 1px 0 #2c7873,3px 2px 0 #2c7873,3px 3px 0 #2c7873
+}
+
+
+#parallax-container .content h4{
+  position: relative;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #111;
+  background: #fff;
+  font-weight: 300;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+
+#parallax-container .content p{
+  color: #fff;
+  font-size: 1.2em;
+}
+
+#parallax-container .content a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background: #ff0562;
+  color:#fff;
+  text-decoration: none;
+  margin-top: 25px;
+  border-radius: 25px;
+  border-bottom: 4px solid #d00d56
+}
+
