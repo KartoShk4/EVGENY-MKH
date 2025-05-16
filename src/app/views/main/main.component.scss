@@ -100,4 +100,44 @@
   }
 }
 
+@media (max-width: 425px) {
+  .greetings {
+    padding-top: 70px;
+    height: 60vh;
+
+    .greetings-block {
+      flex-direction: column-reverse;
+    }
+
+    .greetings-text {
+      font-size: 30px !important;
+      text-align: center;
+      padding-top: 15px;
+      margin: 0;
+    }
+
+    .greetings-image {
+      width: 200px !important;
+      height: 200px !important;
+      margin: 0;
+    }
+  }
+
+  .tech {
+    padding-bottom: 150px;
+    .title {
+      font-size: 30px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .project {
+    padding-bottom: 100px;
+  }
+}
+
 

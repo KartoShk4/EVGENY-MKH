@@ -41,3 +41,16 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .tech-icons {
+    gap: 40px;
+
+    .tech-icon {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

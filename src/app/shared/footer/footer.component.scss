@@ -161,3 +161,42 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .footer {
+    .logo {
+      img {
+        width: 100px !important;
+      }
+    }
+
+    .footer-top {
+      padding-bottom: 30px !important;
+
+      .footer-top-info {
+        .footer-top-info-action {
+          padding-right: 0 !important;
+          a {
+            display: none;
+          }
+        }
+        .socials {
+          padding-left: 15px;
+        }
+      }
+    }
+
+
+    .footer-bottom {
+      .rights {
+        p {
+          font-size: 8px !important;
+        }
+      }
+    }
+
+    .nav-items {
+      display: none !important;
+    }
+  }
+}

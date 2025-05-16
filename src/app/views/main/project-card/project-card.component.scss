@@ -118,3 +118,14 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 425px) {
+  .project-cards {
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+
+    .project-card {
+      width: 350px;
+    }
+  }
+}
