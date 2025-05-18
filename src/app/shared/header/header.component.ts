@@ -1,4 +1,5 @@
 import {Component, HostListener, OnDestroy} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header-component',
@@ -6,6 +7,9 @@ import {Component, HostListener, OnDestroy} from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnDestroy {
+
+  constructor(private router: Router) {}
+
   // По умолчанию меню закрыто.
   menuOpen: boolean = false;
 
@@ -19,6 +23,18 @@ export class HeaderComponent implements OnDestroy {
   // Принудительно закрываем меню
   closeMenu(): void {
     this.menuOpen = false;
+
+    // Добавляем небольшую задержку для якорных ссылок
+    setTimeout(() => {
+      const fragment = this.router.url.split('#')[1];
+      if (fragment) {
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, 100);
+
     // Вызываем функцию - блокировки\разблокировки скролла в меню
     this.updateBodyLock();
   }
