@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variables";
+
 .footer {
   padding-bottom: 60px;
 
@@ -7,7 +9,7 @@
       justify-content: space-between;
       align-items: center;
       padding-bottom: 53px;
-      border-bottom: 2px solid #242424;
+      border-bottom: 2px solid $footer-gray-color;
 
       .logo {
         img {
@@ -56,7 +58,7 @@
     .footer-bottom {
       font-family: "Dayssansblack", sans-serif;
       font-weight: 400;
-      color: #A7A7A7;
+      color: $gray-color;
       display: flex;
       justify-content: space-between;
       padding-top: 60px;
@@ -71,13 +73,13 @@
           a {
             font-family: "Dayssansblack", sans-serif;
             font-weight: 400;
-            color: #A7A7A7;
+            color: $gray-color;
             font-size: 12px;
             text-decoration: none;
             transition: all .3s;
 
             &:hover {
-              color: white;
+              color: $white-color;
             }
           }
         }
@@ -176,10 +178,12 @@
       .footer-top-info {
         .footer-top-info-action {
           padding-right: 0 !important;
+
           a {
             display: none;
           }
         }
+
         .socials {
           padding-left: 15px;
         }

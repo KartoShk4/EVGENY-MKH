@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variables";
+
 .contacts {
   .container {
     .contacts-info {
@@ -11,7 +13,7 @@
       text-align: center;
 
       .contacts-info-title {
-        color: #1976d2;
+        color: $contacts-light-blue-color;
         padding-bottom: 20px;
       }
 
@@ -19,7 +21,7 @@
         transition: all 0.3s;
         a {
           text-decoration: none;
-          background: linear-gradient(to left, #E70FAA, #13B0F5 70%);
+          background: linear-gradient(to left, $pink-color, $blue-color 70%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;

@@ -1,9 +1,11 @@
+@import "../../../../assets/styles/variables";
+
 .education-items {
   max-width: 704px;
 
   .education-item {
     padding-top: 38px;
-    border-bottom: 2px solid #EBEAED;
+    border-bottom: 2px solid $education-light-gray-color;
 
     .education-item-block {
       display: flex;
@@ -16,14 +18,14 @@
         font-size: 20px;
         line-height: 28px;
         font-weight: 400;
-        color: #666666;
+        color: $education-gray-color;
       }
 
       .title-work-time {
         border-radius: 100px;
         padding: 7px 21px;
-        background-color: #D7FFE0;
-        color: #018C0F;
+        background-color: $education-light-green-color;
+        color: $education-green-color;
         font-weight: 600;
         font-size: 9px;
         text-align: center;
@@ -35,7 +37,7 @@
       align-items: center;
       padding-top: 4px;
       padding-bottom: 24px;
-      color: #A7A7A7;
+      color: $gray-color;
       font-family: FiraSans, sans-serif;
       font-weight: 500;
       font-size: 12px;

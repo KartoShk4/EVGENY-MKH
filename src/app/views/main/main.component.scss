@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variables";
+
 .greetings {
   height: 67vh;
   padding-top: 220px;
@@ -13,17 +15,17 @@
         font-family: FiraSans, sans-serif;
         font-weight: 500;
         font-size: 58px;
-        color: #D9D9D9;
+        color: $main-light-gray-color;
 
         .greetings-text-name {
-          background: linear-gradient(to left, #E70FAA, #13B0F5 70%);
+          background: linear-gradient(to left, $pink-color, $blue-color 70%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
         }
 
         .greetings-text-name span {
-          color: #D9D9D9 !important;
+          color: $main-light-gray-color !important;
         }
       }
 
@@ -125,6 +127,7 @@
 
   .tech {
     padding-bottom: 150px;
+
     .title {
       font-size: 30px;
     }

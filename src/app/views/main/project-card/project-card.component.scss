@@ -1,3 +1,5 @@
+@import "../../../../assets/styles/variables";
+
 .project-cards {
   display: grid;
   grid-template-columns: repeat(3, 375px);
@@ -9,7 +11,7 @@
     justify-content: space-between;
     border-radius: 20px;
     padding-bottom: 18px;
-    background-color: #363636;
+    background-color: $project-dark-gray-color;
     width: 375px;
     overflow: hidden;
     position: relative;
@@ -41,7 +43,7 @@
       font-family: FiraSans, sans-serif;
       font-weight: 500;
       font-size: 25px;
-      color: #CCCCCC;
+      color: $project-light-gray-color;
       padding: 0 28px 17px 28px;
     }
 
@@ -49,14 +51,14 @@
       font-family: FiraSans, sans-serif;
       font-weight: 300;
       font-size: 18px;
-      color: #CCCCCC;
+      color: $project-light-gray-color;
       line-height: 26px;
       padding: 0 28px 12px 28px;
       text-align: center;
     }
 
     .project-card-tech {
-      color: #7e7e7e;
+      color: $project-gray-color;
       font-size: 16px;
       font-family: FiraSans, sans-serif;
       font-weight: 400;
@@ -88,11 +90,11 @@
           font-size: 16px;
           font-weight: 400;
           text-decoration: none;
-          color: white;
+          color: $white-color;
           transition: all .3s;
 
           &:hover {
-            background: linear-gradient(to left, #E70FAA, #13B0F5 70%);
+            background: linear-gradient(to left, $pink-color, $blue-color 70%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
