@@ -1,16 +1,18 @@
 import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {MainComponent} from "./views/main/main.component";
 import {AboutComponent} from "./views/about/about.component";
 import {ContactsComponent} from "./views/contacts/contacts.component";
 import {NotFoundComponent} from "./shared/not-found/not-found.component";
-import {ProjectsComponent} from "./views/projects/projects.component";
 
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contacts', component: ContactsComponent},
-  {path: 'projects', component: ProjectsComponent},
+  {
+    path: 'projects', loadChildren: () =>
+      import('./views/projects/projects.module').then(m => m.ProjectsModule)
+  },
   {path: '**', component: NotFoundComponent},
 ];
 
@@ -18,6 +20,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled',
     anchorScrolling: 'enabled',
+    preloadingStrategy: PreloadAllModules,
   })],
   exports: [RouterModule]
 })
