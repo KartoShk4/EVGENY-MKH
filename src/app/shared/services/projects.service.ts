@@ -56,7 +56,7 @@ export class ProjectsService {
     {
       imageUrl: 'assets/images/pages/card/2rism-min.webp',
       title: '2RISM',
-      description: 'Современный лендинг с анимацией, адаптивным дизайном и удобной навигацией для бизнеса.',
+      description: 'Современный адаптивный лендинг с плавной анимацией, удобной навигацией и ярким дизайном для представления бизнеса.',
       technologies: 'HTML, CSS, JavaScript',
       siteLink: 'https://kartoshk4.github.io/2rism/',
       codeLink: 'https://github.com/KartoShk4/2rism'
