@@ -1,4 +1,5 @@
-// visibility.service.ts
+// Скрывает Header и Footer на странице 404(not-found)
+
 import { Injectable } from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 

@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { RouterLinkWithHref } from "@angular/router";
-import { TagColorPipe } from "./pipes/tagColorPipe";
-import { TypedDirective } from "./directives/typed.directive";
-import { TiltDirective } from "./directives/tilt.directive";
-import { NotFoundComponent } from "./not-found/not-found.component";
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HeaderComponent} from './header/header.component';
+import {FooterComponent} from './footer/footer.component';
+import {RouterLinkWithHref} from "@angular/router";
+import {TagColorPipe} from "./pipes/tagColorPipe";
+import {TypedDirective} from "./directives/typed.directive";
+import {TiltDirective} from "./directives/tilt.directive";
+import {NotFoundComponent} from "./not-found/not-found.component";
+import {ProjectCardComponent} from "../views/main/project-card/project-card.component";
 
 
 @NgModule({
@@ -18,6 +18,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
     TypedDirective,
     TiltDirective,
     NotFoundComponent,
+    ProjectCardComponent,
 
   ],
   imports: [
@@ -31,6 +32,8 @@ import { NotFoundComponent } from "./not-found/not-found.component";
     TypedDirective,
     TiltDirective,
     NotFoundComponent,
+    ProjectCardComponent,
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+}

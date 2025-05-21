@@ -1,3 +1,4 @@
+// В браузере в "title" меняет название на другое, если покинуть страницу.
 import { Injectable, OnDestroy } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })

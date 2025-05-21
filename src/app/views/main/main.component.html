@@ -2,7 +2,9 @@
   <div class="container">
     <div class="greetings-block">
       <div class="greetings-text">
-        <p>Привет 👋,<br>Меня зовут <span class="greetings-text-name">Евгений</span><br><span class="greetings-text-name" [appTyped]="['Я Frontend — developer','Я Frontend — разработчик']"></span></p>
+        <p>Привет 👋,<br>Меня зовут <span class="greetings-text-name">Евгений</span><br><span class="greetings-text-name"
+                                                                                             [appTyped]="['Я Frontend — developer','Я Frontend — разработчик']"></span>
+        </p>
       </div>
       <div class="greetings-image">
         <img src="assets/images/pages/greetings-min.webp" alt="myPhoto">
@@ -21,7 +23,12 @@
   <div class="container">
     <div class="title">Проекты</div>
     <div class="subtitle">От идеи до реализации</div>
-      <project-card-component></project-card-component>
+    <div class="project-card-block">
+      <project-card-component
+        *ngFor="let project of projects"
+        [project]="project">
+      </project-card-component>
+    </div>
     <div class="project-link">
       <a routerLink="/projects"><span>Смотреть больше</span>
         <img src="assets/images/pages/arrow-right.svg" alt="arrow">

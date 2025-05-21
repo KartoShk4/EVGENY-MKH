@@ -46,6 +46,12 @@ body {
   padding-bottom: 99px;
 }
 
+.project-card-block {
+  display: grid;
+  grid-template-columns: repeat(3, 375px);
+  gap: 47px;
+}
+
 // MEDIA
 
 @media (max-width: 768px) {

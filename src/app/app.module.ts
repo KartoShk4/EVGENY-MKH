@@ -16,7 +16,6 @@ import {ContactsComponent} from './views/contacts/contacts.component';
   declarations: [
     AppComponent,
     MainComponent,
-    ProjectCardComponent,
     AboutComponent,
     WorkExperienceComponent,
     EducationComponent,
@@ -27,9 +26,10 @@ import {ContactsComponent} from './views/contacts/contacts.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    RouterModule,
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

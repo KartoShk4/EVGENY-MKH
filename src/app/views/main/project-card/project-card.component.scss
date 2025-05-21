@@ -1,10 +1,6 @@
 @import "../../../../assets/styles/variables";
 
 .project-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 375px);
-  gap: 47px;
-
   .project-card {
     display: flex;
     flex-direction: column;
@@ -13,6 +9,7 @@
     padding-bottom: 18px;
     background-color: $project-dark-gray-color;
     width: 375px;
+    height: 582px;
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
@@ -44,6 +41,7 @@
       font-size: 25px;
       color: $project-light-gray-color;
       padding: 0 28px 17px 28px;
+      text-align: center;
     }
 
     .project-card-text {
@@ -54,6 +52,7 @@
       line-height: 26px;
       padding: 0 28px 12px 28px;
       text-align: center;
+      height: 130px;
     }
 
     .project-card-tech {
@@ -62,6 +61,7 @@
       font-family: FiraSans, sans-serif;
       font-weight: 400;
       padding: 0 28px 21px 28px;
+      text-align: center;
 
       span {
         font-family: FiraSans, sans-serif;
