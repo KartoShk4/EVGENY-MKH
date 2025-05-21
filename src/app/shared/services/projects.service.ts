@@ -6,6 +6,22 @@ export class ProjectsService {
 
   projects: ProjectCardType[] = [
     {
+      imageUrl: 'assets/images/pages/card/cars-min.png',
+      title: 'SUPER CARS',
+      description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
+      technologies: 'HTML, CSS, Angular, JavaScript',
+      siteLink: 'https://kartoshk4.github.io/cars/',
+      codeLink: 'https://github.com/KartoShk4/cars'
+    },
+    {
+      imageUrl: 'assets/images/pages/card/2rism-min.webp',
+      title: '2RISM',
+      description: 'Современный адаптивный лендинг с плавной анимацией, удобной навигацией и ярким дизайном для представления бизнеса.',
+      technologies: 'HTML, CSS, JavaScript',
+      siteLink: 'https://kartoshk4.github.io/2rism/',
+      codeLink: 'https://github.com/KartoShk4/2rism'
+    },
+    {
       imageUrl: 'assets/images/pages/card/cookies-min.png',
       title: 'COOKIES',
       description: 'Уютный лендинг с домашним печеньем, описанием продукции, процессом приготовления и отзывами. Адаптивный дизайн.',
@@ -46,20 +62,12 @@ export class ProjectsService {
       codeLink: 'https://github.com/KartoShk4/pizza'
     },
     {
-      imageUrl: 'assets/images/pages/card/cars-min.png',
-      title: 'SUPER CARS',
-      description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
-      technologies: 'HTML, CSS, Angular, JavaScript',
-      siteLink: 'https://kartoshk4.github.io/cars/',
-      codeLink: 'https://github.com/KartoShk4/cars'
-    },
-    {
-      imageUrl: 'assets/images/pages/card/2rism-min.webp',
-      title: '2RISM',
-      description: 'Современный адаптивный лендинг с плавной анимацией, удобной навигацией и ярким дизайном для представления бизнеса.',
+      imageUrl: 'assets/images/pages/card/norway-min.webp',
+      title: 'NORWAY',
+      description: 'Лендинг о Норвегии с атмосферными фото, ключевыми фактами и интерактивными элементами. Адаптивный, лаконичный дизайн.',
       technologies: 'HTML, CSS, JavaScript',
-      siteLink: 'https://kartoshk4.github.io/2rism/',
-      codeLink: 'https://github.com/KartoShk4/2rism'
+      siteLink: 'https://kartoshk4.github.io/norway/',
+      codeLink: 'https://github.com/KartoShk4/norway'
     },
   ]
 
