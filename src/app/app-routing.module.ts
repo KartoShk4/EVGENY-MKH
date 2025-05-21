@@ -4,11 +4,13 @@ import {MainComponent} from "./views/main/main.component";
 import {AboutComponent} from "./views/about/about.component";
 import {ContactsComponent} from "./views/contacts/contacts.component";
 import {NotFoundComponent} from "./shared/not-found/not-found.component";
+import {ProjectsComponent} from "./views/projects/projects.component";
 
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path: 'projects', component: ProjectsComponent},
   {path: '**', component: NotFoundComponent},
 ];
 

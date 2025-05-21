@@ -53,12 +53,12 @@ export class ProjectCardComponent {
       codeLink: 'https://github.com/KartoShk4/pizza'
     },
     {
-      imageUrl: 'assets/images/pages/card/kappadokia-min.png',
-      title: 'KAPPADOKIA',
-      description: 'Лендинг о Каппадокии с описанием достопримечательностей, туров и фото. Адаптивный и красочный дизайн.',
-      technologies: 'HTML, CSS',
-      siteLink: 'https://kartoshk4.github.io/kappadokia/',
-      codeLink: 'https://github.com/KartoShk4/kappadokia'
+      imageUrl: 'assets/images/pages/card/cars-min.png',
+      title: 'SUPER CARS',
+      description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
+      technologies: 'HTML, CSS, Angular, JavaScript',
+      siteLink: 'https://kartoshk4.github.io/cars/',
+      codeLink: 'https://github.com/KartoShk4/cars'
     },
   ]
 }
