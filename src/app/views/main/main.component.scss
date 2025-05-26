@@ -59,33 +59,7 @@
   .container {
     text-align: center;
 
-    .project-link {
-      display: inline-block;
-      padding-top: 30px;
-      margin-left: 1020px;
-      transition: transform .3s ease;
 
-      a {
-        text-decoration: none;
-
-        span {
-          font-family: FiraSans, sans-serif;
-          font-size: 18px;
-          color: $white-color;
-        }
-
-        img {
-          position: relative;
-          width: 20px;
-          top: 5px;
-          margin-left: 7px;
-        }
-      }
-
-      &:hover {
-        transform: translateX(5px);
-      }
-    }
   }
 }
 

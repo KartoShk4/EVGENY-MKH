@@ -1,3 +1,5 @@
+@import "../../../../assets/styles/variables";
+
 .project-cards {
   padding-top: 99px;
   padding-bottom: 197px;
@@ -10,6 +12,13 @@
     .subtitle {
       text-align: center;
       padding-bottom: 50px;
+    }
+
+    // MEDIA
+    @media screen and (max-width: 768px) {
+      .project-link {
+        margin-left: 230px;
+      }
     }
   }
 }
