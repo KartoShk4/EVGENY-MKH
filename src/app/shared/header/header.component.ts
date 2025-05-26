@@ -25,8 +25,8 @@ export class HeaderComponent implements OnDestroy {
     this.menuOpen = false;
 
     // Добавляем небольшую задержку для якорных ссылок
-    setTimeout(() => {
-      const fragment = this.router.url.split('#')[1];
+    setTimeout((): void => {
+      const fragment: string = this.router.url.split('#')[1];
       if (fragment) {
         const element = document.getElementById(fragment);
         if (element) {

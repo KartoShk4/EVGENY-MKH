@@ -6,7 +6,7 @@ export class ProjectsService {
 
   projects: ProjectCardType[] = [
     {
-      imageUrl: 'assets/images/pages/card/cars-min.png',
+      imageUrl: 'assets/images/pages/card/cars-min-v2.png',
       title: 'SUPER CARS',
       description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
       technologies: 'HTML, CSS, Angular, JavaScript',
@@ -14,7 +14,7 @@ export class ProjectsService {
       codeLink: 'https://github.com/KartoShk4/cars'
     },
     {
-      imageUrl: 'assets/images/pages/card/2rism-min.webp',
+      imageUrl: 'assets/images/pages/card/2rism-min.png',
       title: '2RISM',
       description: 'Современный адаптивный лендинг с плавной анимацией, удобной навигацией и ярким дизайном для представления бизнеса.',
       technologies: 'HTML, CSS, JavaScript',
