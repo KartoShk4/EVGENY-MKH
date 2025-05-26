@@ -13,25 +13,39 @@
       text-align: center;
       padding-bottom: 50px;
     }
+  }
 
-    // MEDIA
+  // MEDIA
 
-    @media screen and (max-width: 1024px) {
-      .project-card-block {
-        grid-template-columns: repeat(2, 350px) !important;
-        gap: 20px !important;
-        justify-content: space-evenly;
-      }
-
-      .project-link {
-        margin-left: 800px !important;
-      }
+  @media screen and (max-width: 1024px) {
+    .project-card-block {
+      grid-template-columns: repeat(2, 350px) !important;
+      gap: 20px !important;
+      justify-content: space-evenly;
     }
 
-    @media screen and (max-width: 768px) {
-      .project-link {
-        margin-left: 230px;
-      }
+    .project-link {
+      margin-left: 800px !important;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .project-card-block {
+      grid-template-columns: repeat(2, 350px) !important;
+      gap: 20px !important;
+      justify-content: space-evenly;
+      justify-items: center
+    }
+
+    .project-link {
+      margin-left: 650px !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .project-link {
+      margin-left: 230px;
     }
   }
 }
+

@@ -88,6 +88,28 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .greetings-text {
+    font-size: 35px !important;
+  }
+
+  .greetings-image {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .project-card-block {
+    grid-template-columns: repeat(2, 350px) !important;
+    gap: 20px !important;
+    justify-content: space-evenly;
+    justify-items: center
+  }
+
+  .project-link {
+    margin-left: 550px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .greetings {
     padding-top: 120px;
