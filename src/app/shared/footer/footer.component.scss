@@ -122,6 +122,12 @@
   }
 }
 
+@media (max-width: 900px) {
+  .nav-items {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     .logo {
