@@ -80,6 +80,10 @@ body {
   }
 }
 
+.active {
+  color: $white-color !important;
+}
+
 // MEDIA
 
 @media (max-width: 768px) {
