@@ -140,7 +140,7 @@
     }
 
     .greetings-text {
-      font-size: 30px !important;
+      font-size: 28px !important;
       text-align: center;
       padding-top: 15px;
       margin: 0;
@@ -154,7 +154,7 @@
   }
 
   .tech {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 
     .title {
       font-size: 30px;
@@ -168,6 +168,18 @@
 
   .project {
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .project-card-block {
+    grid-template-columns: repeat(1, 350px) !important;
+    gap: 20px !important;
+    justify-content: center;
+  }
+
+  .project-link {
+    margin-left: 170px !important;
   }
 }
 
