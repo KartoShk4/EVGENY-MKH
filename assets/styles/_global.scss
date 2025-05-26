@@ -63,6 +63,13 @@ body {
     font-size: 18px;
     padding-bottom: 50px;
   }
+
+  .project-card-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .tag {
