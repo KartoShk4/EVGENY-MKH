@@ -17,6 +17,11 @@
         font-size: 58px;
         color: $main-light-gray-color;
 
+        .animate-emoji {
+          width: 58px;
+          height: 58px;
+        }
+
         .greetings-text-name {
           background: linear-gradient(to left, $pink-color, $blue-color 70%);
           -webkit-background-clip: text;
@@ -69,6 +74,13 @@
   .greetings-text {
     margin-left: 30px;
     font-size: 50px !important;
+
+    picture {
+      .animate-emoji {
+        width: 58px;
+        height: 58px;
+      }
+    }
   }
 
   .greetings-image {
@@ -91,6 +103,13 @@
 @media screen and (max-width: 900px) {
   .greetings-text {
     font-size: 35px !important;
+
+    picture {
+      .animate-emoji {
+        width: 35px !important;
+        height: 35px !important;
+      }
+    }
   }
 
   .greetings-image {
@@ -118,6 +137,13 @@
     .greetings-text {
       margin-left: 25px;
       font-size: 38px !important;
+
+      picture {
+        .animate-emoji {
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
     }
 
     .greetings-image {
@@ -161,6 +187,13 @@
       text-align: center;
       padding-top: 15px;
       margin: 0;
+
+      picture {
+        .animate-emoji {
+          width: 24px !important;
+          height: 24px !important;
+        }
+      }
     }
 
     .greetings-image {
