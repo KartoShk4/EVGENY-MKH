@@ -69,6 +69,14 @@ export class ProjectsService {
       siteLink: 'https://kartoshk4.github.io/norway/',
       codeLink: 'https://github.com/KartoShk4/norway'
     },
+    {
+      imageUrl: 'assets/images/pages/card/fashion.webp',
+      title: 'FASHION',
+      description: 'Модный лендинг с карточками товаров, минималистичным дизайном, выполненный на React без адаптива.',
+      technologies: 'HTML, CSS, JavaScript, React',
+      siteLink: 'https://kartoshk4.github.io/fashion/',
+      codeLink: 'https://github.com/KartoShk4/fashion'
+    },
   ]
 
   getProjects(): ProjectCardType[] {
