@@ -77,6 +77,30 @@ export class ProjectsService {
       siteLink: 'https://kartoshk4.github.io/fashion/',
       codeLink: 'https://github.com/KartoShk4/fashion'
     },
+    {
+      imageUrl: 'assets/images/pages/card/memory-game.png',
+      title: 'MEMORY GAME',
+      description: 'Увлекательная игра выполненная на React для тренировки памяти: открывай карточки, находи пары и побеждай с умом!',
+      technologies: 'HTML, CSS, JavaScript, React',
+      siteLink: 'https://kartoshk4.github.io/memory-game/',
+      codeLink: 'https://github.com/KartoShk4/memory-game'
+    },
+    {
+      imageUrl: 'assets/images/pages/card/task-manager.png',
+      title: 'TASK MANAGER',
+      description: 'Простой и удобный таск-менеджер: добавляй, отмечай выполненные и удаляй задачи. Реализован на JavaScript.',
+      technologies: 'HTML, CSS, JavaScript',
+      siteLink: 'https://kartoshk4.github.io/taskManager/',
+      codeLink: 'https://github.com/KartoShk4/taskManager'
+    },
+    {
+      imageUrl: 'assets/images/pages/card/tea.webp',
+      title: 'TEA',
+      description: 'Каталог чаёв с карточками товаров: название, описание, цена и кнопка покупки. Лёгкий и понятный интерфейс.',
+      technologies: 'HTML, CSS, JavaScript, Angular',
+      siteLink: 'https://kartoshk4.github.io/tea/',
+      codeLink: 'https://github.com/KartoShk4/tea'
+    },
   ]
 
   getProjects(): ProjectCardType[] {
