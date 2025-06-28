@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {WorkExperienceType} from "../../../../types/work-experience.type";
+import {Component, OnInit} from '@angular/core';
+import {EducationService} from '../../../shared/services/education.service';
 import {EducationType} from "../../../../types/education.type";
 
 @Component({
@@ -7,15 +7,14 @@ import {EducationType} from "../../../../types/education.type";
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss']
 })
-export class EducationComponent {
 
-  educations: EducationType[] = [
-    {
-      work: 'Frontend разработчик (студент)',
-      time: 'Обучение',
-      name: 'Айтилогия',
-      date: 'Март 2024 - Март 2025',
-    },
-  ]
+export class EducationComponent implements OnInit {
+  educations: EducationType[] = [];
 
+  constructor(private educationsService: EducationService) {
+  }
+
+  ngOnInit(): void {
+    this.educations = this.educationsService.getEducations();
+  }
 }

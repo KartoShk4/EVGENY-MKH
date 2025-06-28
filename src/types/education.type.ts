@@ -1,6 +1,7 @@
 export type EducationType = {
-  work: string,
+  education: string,
   time: string,
   name: string,
+  address: string,
   date: string,
 }
