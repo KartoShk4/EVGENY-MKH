@@ -9,7 +9,7 @@ export class EducationService {
       education: 'Frontend разработчик',
       time: 'Обучение',
       name: 'Айтилогия',
-      address: 'Москва',
+      address: 'Москва (удалённо)',
       date: 'Март 2024 - Март 2025',
     },
   ]

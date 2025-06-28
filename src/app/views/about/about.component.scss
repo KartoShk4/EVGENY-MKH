@@ -15,7 +15,7 @@
         font-size: 42px;
         letter-spacing: -0.4px;
         line-height: 52px;
-        color: $about-light-blue-color;
+        color: $white-color;
       }
 
       .about-text {
@@ -24,74 +24,61 @@
         line-height: 26px;
         font-size: 18px;
         padding-top: 10px;
+        padding-left: 15px;
         max-width: 850px;
-      }
-    }
-
-    .work-experience {
-      padding-top: 100px;
-      color: $about-gray-color;
-
-      .about-title {
-        font-family: FiraSans, sans-serif;
-        font-weight: 700;
-        font-size: 42px;
-        letter-spacing: -0.4px;
-        line-height: 52px;
-        color: $about-light-blue-color;
-      }
-    }
-
-    .education {
-      padding-top: 38px;
-      color: $about-light-blue-color;
-
-      .about-title {
-        font-family: FiraSans, sans-serif;
-        font-weight: 700;
-        font-size: 42px;
-        letter-spacing: -0.4px;
-        line-height: 52px;
       }
     }
   }
 
-  .resume {
-    position: absolute;
-    top: 138px;
-    right: 360px;
+  .education {
+    padding-top: 38px;
+    color: $white-color;
 
-    a {
-      position: relative;
-      display: inline-block;
+    .about-title {
       font-family: FiraSans, sans-serif;
-      font-size: 20px;
-      color: white;
-      background-color: #1976d2;
-      text-decoration: none;
-      border-radius: 20px;
-      padding: 10px 50px;
-      z-index: 0;
-      transition: color 0.3s;
-      overflow: hidden;
+      font-weight: 700;
+      font-size: 42px;
+      letter-spacing: -0.4px;
+      line-height: 52px;
+    }
+  }
+}
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        border-radius: 22px;
-        background: linear-gradient(to right, $pink-color, $blue-color);
-        opacity: 0;
-        transition: opacity 0.3s ease-out;
-        z-index: -1;
-      }
+.resume {
+  position: absolute;
+  top: 138px;
+  right: 360px;
 
-      &:hover::before {
-        opacity: 1;
-      }
+  a {
+    position: relative;
+    display: inline-block;
+    font-family: FiraSans, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #1976d2;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 50px;
+    z-index: 0;
+    transition: color 0.3s;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 22px;
+      background: linear-gradient(to right, $pink-color, $blue-color);
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      opacity: 1;
     }
   }
 }

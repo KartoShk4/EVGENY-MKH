@@ -5,11 +5,9 @@
   padding: 0;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
-}
-
-body {
+  box-sizing: border-box;
   background-color: $background-dark-color;
 }
 
@@ -69,6 +67,7 @@ body {
 //EDUCATIONS-WORKS
 .experience-items {
   max-width: 850px;
+  padding-left: 15px;
 
   .experience-item {
     padding-top: 10px;
@@ -110,8 +109,8 @@ body {
     align-items: center;
     padding-top: 4px;
     padding-bottom: 24px;
-    color: $gray-color;
     font-family: FiraSans, sans-serif;
+    color: $gray-color;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -122,15 +121,18 @@ body {
       width: 300px;
       padding-right: 22px;
 
-      span {
-        padding-top: 2px;
-        padding-right: 4px;
-        margin: 0;
-      }
-
       &:last-child {
         padding-left: 45px;
         padding-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $gray-color;
+
+        &:hover {
+          color: $white-color;
+        }
       }
     }
   }
