@@ -27,11 +27,6 @@
         object-fit: cover;
         object-position: center;
         will-change: transform;
-        transition: transform 0.3s ease-in-out;
-
-        &:hover {
-          transform: scale(1.04);
-        }
       }
     }
 

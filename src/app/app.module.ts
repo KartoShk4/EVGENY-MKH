@@ -7,7 +7,6 @@ import {MainComponent} from './views/main/main.component';
 import {RouterModule} from "@angular/router";
 import {ProjectCardComponent} from "./views/main/project-card/project-card.component";
 import {AboutComponent} from './views/about/about.component';
-import {WorkExperienceComponent} from './views/about/work-experience/work-experience.component';
 import {EducationComponent} from './views/about/education/education.component';
 import {TechComponent} from './views/main/tech/tech.component';
 import {ContactsComponent} from './views/contacts/contacts.component';
@@ -17,7 +16,6 @@ import {ContactsComponent} from './views/contacts/contacts.component';
     AppComponent,
     MainComponent,
     AboutComponent,
-    WorkExperienceComponent,
     EducationComponent,
     TechComponent,
     ContactsComponent,
