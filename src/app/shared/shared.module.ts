@@ -21,11 +21,11 @@ import {ProjectCardComponent} from "../views/main/project-card/project-card.comp
     ProjectCardComponent,
 
   ],
-    imports: [
-        CommonModule,
-        RouterLinkWithHref,
-        RouterLinkActive,
-    ],
+  imports: [
+    CommonModule,
+    RouterLinkWithHref,
+    RouterLinkActive,
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,
