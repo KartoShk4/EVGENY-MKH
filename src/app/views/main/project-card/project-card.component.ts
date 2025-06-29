@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {ProjectCardType} from "../../../../types/project-card.type";
+import {OwlOptions} from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'project-card-component',
@@ -9,5 +10,16 @@ import {ProjectCardType} from "../../../../types/project-card.type";
 export class ProjectCardComponent {
 
   @Input() project!: ProjectCardType;
+
+  carouselOptions: OwlOptions = {
+    loop: true,               // Зацикливание карусели
+    margin: 10,               // Отступ между слайдами
+    dots: true,               // Отображение точек - навигации
+    items: 1,                 // Количество видимых слайдов
+    autoHeight: true,         // Автоматически подстваивать высоту карусели под текущий слайд
+    autoplay: true,           // Включает автопрокрутку
+    autoplayTimeout: 3000,    // Интервал между слайдами (в мс)
+    autoplayHoverPause: true  // Останавливать при наведении
+  };
 
 }

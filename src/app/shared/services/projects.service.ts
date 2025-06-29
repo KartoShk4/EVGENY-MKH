@@ -7,6 +7,11 @@ export class ProjectsService {
   projects: ProjectCardType[] = [
     {
       imageUrl: 'assets/images/pages/card/cars-min-v2.png',
+      images: [
+        'assets/images/pages/card/2rism-min.png',
+        'assets/images/pages/card/burgers-min.png',
+        'assets/images/pages/card/fashion.webp',
+      ],
       title: 'SUPER CARS',
       description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
       technologies: 'HTML, CSS, Angular, JavaScript',

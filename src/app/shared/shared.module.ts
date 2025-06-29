@@ -8,6 +8,7 @@ import {TypedDirective} from "./directives/typed.directive";
 import {TiltDirective} from "./directives/tilt.directive";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import {ProjectCardComponent} from "../views/main/project-card/project-card.component";
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -19,12 +20,12 @@ import {ProjectCardComponent} from "../views/main/project-card/project-card.comp
     TiltDirective,
     NotFoundComponent,
     ProjectCardComponent,
-
   ],
   imports: [
     CommonModule,
     RouterLinkWithHref,
     RouterLinkActive,
+    CarouselModule,
   ],
   exports: [
     HeaderComponent,

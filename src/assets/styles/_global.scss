@@ -33,6 +33,7 @@ html, body {
   font-size: 48px;
   font-weight: 700;
   color: #D9D9D9;
+  user-select: none;
 }
 
 .subtitle {
@@ -41,6 +42,7 @@ html, body {
   font-size: 20px;
   color: #A7A7A7;
   padding-bottom: 99px;
+  user-select: none;
 }
 
 .project-card-block {
@@ -61,6 +63,30 @@ html, body {
   display: inline-block;
   margin: 2px;
   text-transform: uppercase;
+}
+
+
+/* Добавляем стили для dots */
+.owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.owl-dot {
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: linear-gradient(45deg, #E70FAA 30%, #13B0F5);
 }
 
 // MEDIA Common

@@ -5,17 +5,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 20px;
     padding-bottom: 18px;
     background-color: $project-dark-gray-color;
     width: 375px;
     height: 582px;
     overflow: hidden;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow:
+        0 5px 15px rgba($pink-color, 0.3),
+        0 10px 30px rgba($blue-color, 0.2);
+    }
 
     .project-card-image {
-      padding: 5px 5px 15px 5px;
+      position: relative;
+      padding: 10px;
       overflow: hidden;
       border-radius: 16px;
 
@@ -38,6 +44,7 @@
       padding: 0 28px 17px 28px;
       text-align: center;
       text-transform: uppercase;
+      user-select: none;
     }
 
     .project-card-text {
@@ -49,6 +56,7 @@
       padding: 0 28px 12px 28px;
       text-align: center;
       height: 130px;
+      user-select: none;
     }
 
     .project-card-tech {

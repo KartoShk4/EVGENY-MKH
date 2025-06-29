@@ -8,6 +8,7 @@ import {EducationComponent} from './views/about/education/education.component';
 import {TechComponent} from './views/main/tech/tech.component';
 import {ContactsComponent} from './views/contacts/contacts.component';
 import {SharedModule} from "./shared/shared.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {SharedModule} from "./shared/shared.module";
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   exports: [
