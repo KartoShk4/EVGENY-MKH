@@ -4,4 +4,5 @@ export type EducationType = {
   name: string,
   address: string,
   date: string,
+  link: string,
 }

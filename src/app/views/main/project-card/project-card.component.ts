@@ -14,11 +14,11 @@ export class ProjectCardComponent {
   carouselOptions: OwlOptions = {
     loop: true,               // Зацикливание карусели
     margin: 10,               // Отступ между слайдами
-    dots: true,               // Отображение точек - навигации
+    dots: false,               // Отображение точек - навигации
     items: 1,                 // Количество видимых слайдов
-    autoHeight: true,         // Автоматически подстваивать высоту карусели под текущий слайд
+    autoHeight: false,         // Автоматически подстваивать высоту карусели под текущий слайд
     autoplay: true,           // Включает автопрокрутку
-    autoplayTimeout: 3000,    // Интервал между слайдами (в мс)
+    autoplayTimeout: 7000,    // Интервал между слайдами (в мс)
     autoplayHoverPause: true  // Останавливать при наведении
   };
 

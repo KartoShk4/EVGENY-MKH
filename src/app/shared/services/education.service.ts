@@ -11,6 +11,15 @@ export class EducationService {
       name: 'Айтилогия',
       address: 'Москва (удалённо)',
       date: 'Март 2024 - Март 2025',
+      link: 'https://itlogia.ru/certificates/course/742-56068',
+    },
+    {
+      education: 'Frontend разработчик',
+      time: 'Фриланс',
+      name: 'FinRate',
+      address: 'Октябрьский (удалённо)',
+      date: 'Июнь 2025 - Август 2025',
+      link: '/about',
     },
   ]
 

@@ -11,12 +11,13 @@
     height: 582px;
     overflow: hidden;
     position: relative;
+    border-radius: 4px;
     transition: all 0.3s ease-in-out;
 
     &:hover {
       box-shadow:
-        0 5px 15px rgba($pink-color, 0.3),
-        0 10px 30px rgba($blue-color, 0.2);
+        0 0 8px 0 rgba($pink-color, 0.3),
+        0 0 8px 0 rgba($blue-color, 0.2);
     }
 
     .project-card-image {
