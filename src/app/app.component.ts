@@ -3,6 +3,9 @@ import { TitleNotifierService } from 'src/app/shared/services/title-notifier.ser
 import { VisibilityService } from "./shared/services/visability.service";
 import { filter } from 'rxjs';
 import {NavigationEnd, Router} from "@angular/router";
+import AOS from 'aos';
+
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -31,6 +34,14 @@ export class AppComponent implements OnInit {
       .subscribe((event: NavigationEnd): void => {
         this.visibilityService.changeVisibility(!event.urlAfterRedirects.includes('not-found'));
       });
+
+    // Отслеживание роутинга в Angular для Google Аналитика
+    router.events.pipe(filter(e => e instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd)=> {
+        gtag('config', 'G-L8C4W6J8KE', {
+          'page_path': event.urlAfterRedirects
+        });
+      })
   }
 
   ngOnInit(): void {
@@ -38,5 +49,10 @@ export class AppComponent implements OnInit {
       'Евгений Мухамадеев 🙂',
       'Возвращайтесь 😢'
     );
+    AOS.init({
+      once: false,
+      mirror: true,
+      duration: 800
+    });
   }
 }
