@@ -18,7 +18,7 @@ export class ProjectsService {
       description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
       technologies: 'HTML, CSS, Angular, JavaScript',
       siteLink: 'https://kartoshk4.github.io/cars/',
-      codeLink: 'https://github.com/KartoShk4/cars'
+      codeLink: 'https://github.com/KartoShk4/cars-code'
     },
     {
       imageUrl: 'assets/images/pages/card/2rism/2rism01.png',
