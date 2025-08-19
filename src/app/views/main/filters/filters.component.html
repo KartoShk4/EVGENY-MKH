@@ -1,1 +1,17 @@
-<p>filters works!</p>
+<div class="filters">
+    <div class="container">
+        <div class="filters-wrapper">
+            <div class="filter">
+                <ul #project>
+                    <li
+                            *ngFor="let filter of projectFilter; let i = index; trackBy: trackByIndex"
+                            [class.active]="filter.active"
+                            (click)="changeFilter(filter)"
+                    >
+                        {{ filter.name }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

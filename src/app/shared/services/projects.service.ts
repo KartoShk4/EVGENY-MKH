@@ -178,4 +178,13 @@ export class ProjectsService {
   getProjects(): ProjectCardType[] {
     return this.projects;
   }
+
+  // фильтровать по технологии или "Все проекты"
+  getProjectsByFilter(filterName: string): ProjectCardType[] {
+    if (filterName === 'Все проекты') {
+      return this.projects;
+    }
+    return this.projects.filter(project =>
+    project.technologies.toLowerCase().includes(filterName.toLowerCase()))
+  }
 }

@@ -19,7 +19,6 @@ import { FiltersComponent } from './views/main/filters/filters.component';
     EducationComponent,
     TechComponent,
     ContactsComponent,
-    FiltersComponent,
   ],
   imports: [
     BrowserModule,
