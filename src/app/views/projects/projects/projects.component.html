@@ -2,6 +2,11 @@
   <div class="container">
     <div class="title">Коллекция идей</div>
     <div class="subtitle">Погрузись в мир моих лучших решений</div>
+    <!-- Фильтр -->
+    <div class="filter-block">
+      <filters (projectsChange)="projects = $event"></filters>
+    </div>
+    <!-- Фильтр -->
     <div class="project-card-block">
       <project-card-component
         *ngFor="let project of projects"

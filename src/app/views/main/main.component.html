@@ -20,19 +20,26 @@
   <div class="container">
     <div class="title" data-aos="fade-up" data-aos-duration="1000">Мой стек технологий</div>
     <div class="subtitle" data-aos="fade-up" data-aos-duration="1500">Технологии, с которыми я недавно работал</div>
-    <tech-component data-aos="fade-up" data-aos-duration="1700"></tech-component>
+    <!-- Стек технологий -->
+    <tech-component
+      data-aos="fade-up"
+      data-aos-duration="1700">
+    </tech-component>
+    <!-- Стек технологий -->
   </div>
 </section>
 <section class="project" id="project" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
     <div class="title" data-aos="fade-up" data-aos-duration="1000">Проекты</div>
     <div class="subtitle" data-aos="fade-up" data-aos-duration="1500">От идеи до реализации</div>
+    <!-- Проекты -->
     <div class="project-card-block">
       <project-card-component
         *ngFor="let project of projects"
         [project]="project">
       </project-card-component>
     </div>
+    <!-- Проекты -->
     <div class="project-link">
       <a routerLink="/projects">
         <span>Смотреть больше</span>

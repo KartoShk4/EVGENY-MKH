@@ -1,0 +1,16 @@
+<div class="filters">
+    <div class="sticky-wrapper">
+        <div class="filters-wrapper">
+            <ul class="filter-list">
+                <li
+                        *ngFor="let filter of projectFilter; let i = index; trackBy: trackByIndex"
+                        [class.active]="filter.active"
+                        (click)="changeFilter(filter)"
+                        class="filter-item"
+                >
+                    {{ filter.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

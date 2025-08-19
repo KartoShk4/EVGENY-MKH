@@ -9,6 +9,7 @@ import {TechComponent} from './views/main/tech/tech.component';
 import {ContactsComponent} from './views/contacts/contacts.component';
 import {SharedModule} from "./shared/shared.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FiltersComponent } from './views/main/filters/filters.component';
 
 @NgModule({
   declarations: [

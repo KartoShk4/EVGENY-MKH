@@ -1,8 +1,8 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { TitleNotifierService } from 'src/app/shared/services/title-notifier.service';
-import { VisibilityService } from "./shared/services/visability.service";
-import { filter } from 'rxjs';
-import {NavigationEnd, Router} from "@angular/router";
+import {Component, OnInit, ChangeDetectorRef} from '@angular/core';
+import {TitleNotifierService} from 'src/app/shared/services/title-notifier.service';
+import {VisibilityService} from "./shared/services/visability.service";
+import {filter} from 'rxjs';
+import {NavigationEnd, Router, Event} from "@angular/router";
 import AOS from 'aos';
 
 declare let gtag: Function;
@@ -36,8 +36,9 @@ export class AppComponent implements OnInit {
       });
 
     // Отслеживание роутинга в Angular для Google Аналитика
-    router.events.pipe(filter(e => e instanceof NavigationEnd))
-      .subscribe((event: NavigationEnd)=> {
+    this.router.events.pipe(
+      filter((e: Event): e is NavigationEnd => e instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
         gtag('config', 'G-L8C4W6J8KE', {
           'page_path': event.urlAfterRedirects
         });
