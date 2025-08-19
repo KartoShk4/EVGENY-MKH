@@ -1,7 +1,11 @@
-<div class="project-cards" >
+<div class="project-cards">
   <div class="project-card">
     <div class="project-card-image">
-      <img [src]="project.imageUrl" [alt]="project.title">
+      <owl-carousel-o [options]="carouselOptions">
+        <ng-template carouselSlide *ngFor="let img of project.images || [project.imageUrl]">
+          <img [src]="img" [alt]="project.title">
+        </ng-template>
+      </owl-carousel-o>
     </div>
     <header class="project-card-title">{{ project.title }}</header>
     <p class="project-card-text">{{ project.description }}</p>

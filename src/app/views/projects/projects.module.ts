@@ -1,11 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { ProjectsRoutingModule } from './projects-routing.module';
-import { ProjectsComponent } from './projects/projects.component';
-import {AppModule} from "../../app.module";
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {ProjectsRoutingModule} from './projects-routing.module';
+import {ProjectsComponent} from './projects/projects.component';
 import {SharedModule} from "../../shared/shared.module";
-
 
 @NgModule({
   declarations: [
@@ -17,4 +14,5 @@ import {SharedModule} from "../../shared/shared.module";
     SharedModule,
   ]
 })
-export class ProjectsModule { }
+export class ProjectsModule {
+}

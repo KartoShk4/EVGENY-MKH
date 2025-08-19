@@ -1,4 +1,4 @@
-<div class="experience-items">
+<div class="experience-items" data-aos="fade-up" data-aos-duration="2000">
   <div class="experience-item" *ngFor="let education of educations">
     <div class="experience-item-block">
       <div class="title">{{ education.education }}</div>
@@ -6,7 +6,7 @@
     </div>
     <div class="experience-item-block-info">
       <div class="experience-item-block-info-data">
-        <a href="https://itlogia.ru/certificates/course/742-56068" target="_blank">
+        <a [href]="education.link" target="_blank">
           {{ education.name }}
         </a>
       </div>
