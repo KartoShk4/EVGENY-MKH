@@ -2,11 +2,12 @@
     <div class="container">
         <div class="filters-wrapper">
             <div class="filter">
-                <ul #project>
+                <ul class="filter-list" #project>
                     <li
                             *ngFor="let filter of projectFilter; let i = index; trackBy: trackByIndex"
                             [class.active]="filter.active"
                             (click)="changeFilter(filter)"
+                            class="filter-item"
                     >
                         {{ filter.name }}
                     </li>
