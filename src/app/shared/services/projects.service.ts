@@ -16,7 +16,7 @@ export class ProjectsService {
       ],
       title: 'SUPER CARS',
       description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
-      technologies: 'HTML, CSS, Angular, JavaScript',
+      technologies: 'HTML, CSS, Angular, TypeScript',
       siteLink: 'https://kartoshk4.github.io/cars/',
       codeLink: 'https://github.com/KartoShk4/cars-code'
     },
