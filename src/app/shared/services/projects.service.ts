@@ -173,6 +173,20 @@ export class ProjectsService {
       siteLink: 'https://kartoshk4.github.io/tea/',
       codeLink: 'https://github.com/KartoShk4/tea'
     },
+    {
+      imageUrl: 'assets/images/pages/card/coffee/coffee1.webp',
+      images: [
+        'assets/images/pages/card/coffee/coffee1.webp',
+        'assets/images/pages/card/coffee/coffee2.webp',
+        'assets/images/pages/card/coffee/coffee3.webp',
+        'assets/images/pages/card/coffee/coffee4.webp',
+      ],
+      title: 'CoffeSUN',
+      description: 'Сайт — лендинг о кофе, созданный на React + Vite, с минимальной HTML/JS/CSS структурой.',
+      technologies: 'HTML, SCSS, JavaScript, React, БЭМ',
+      siteLink: 'https://kartoshk4.github.io/cofee-code/',
+      codeLink: 'https://github.com/KartoShk4/cofee-code'
+    },
   ]
 
   getProjects(): ProjectCardType[] {
