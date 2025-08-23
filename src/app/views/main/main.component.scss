@@ -41,6 +41,7 @@
         border: 9px solid transparent;
         background: linear-gradient(to top, #00C0FD, #E70FAA 60%) border-box;
         border-radius: 180px;
+        flex-shrink: 0;
         overflow: hidden;
 
         img {
