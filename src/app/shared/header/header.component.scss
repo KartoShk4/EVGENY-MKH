@@ -1,7 +1,12 @@
 @import "../../../assets/styles/variables";
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
   padding-top: 41px;
+  background-color: $background-dark-color;
 
   .container {
     .header-icon {
@@ -90,7 +95,16 @@
   .burger {
     display: none;
   }
+
+  &.pinned {
+    transform: translateY(0);
+  }
+
+  &.unpinned {
+    transform: translateY(-100%);
+  }
 }
+
 
 // MEDIA
 @media (max-width: 1024px) {
@@ -145,7 +159,6 @@
 
       backdrop-filter: blur(40px);
       -webkit-backdrop-filter: blur(40px);
-
 
 
       &.open {
@@ -257,7 +270,6 @@
 
       backdrop-filter: blur(40px);
       -webkit-backdrop-filter: blur(40px);
-
 
 
       &.open {
@@ -394,7 +406,6 @@
       -webkit-backdrop-filter: blur(40px);
 
 
-
       &.open {
         display: flex;
         transform: translateY(0);
@@ -410,7 +421,7 @@
           text-decoration: none;
           transition: color 0.3s ease;
           background-position: -1000px !important;
-          background-size: 0  !important;
+          background-size: 0 !important;
           color: $white-color !important;
         }
       }

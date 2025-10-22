@@ -1,14 +1,36 @@
-import {Component, HostListener, OnDestroy} from '@angular/core';
-import { Router } from '@angular/router';
+import {AfterViewInit, Component, HostListener, OnDestroy} from '@angular/core';
+import {Router} from '@angular/router';
+import Headroom from 'headroom.js';
 
 @Component({
   selector: 'header-component',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnDestroy {
+export class HeaderComponent implements OnDestroy, AfterViewInit {
+  private headroom: Headroom | null = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
+
+  ngAfterViewInit(): void {
+    const header = document.querySelector('header');
+    if (header) {
+      const headroom = new Headroom(header, {
+        offset: 50,   // сколько пикселей проскроллить вниз, чтобы сработало скрытие
+        tolerance: {
+          up: 150,   // сколько px нужно прокрутить вверх, чтобы показать
+          down: 1000  // сколько px нужно прокрутить вниз, чтобы скрыть
+        },
+        classes: {
+          initial: "animated", // класс при инициализации
+          pinned: 'pinned',   // класс, когда хедер виден
+          unpinned: 'unpinned'// класс, когда хедер скрыт
+        }
+      });
+      headroom.init();
+    }
+  }
 
   // По умолчанию меню закрыто.
   menuOpen: boolean = false;
@@ -30,7 +52,7 @@ export class HeaderComponent implements OnDestroy {
       if (fragment) {
         const element = document.getElementById(fragment);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({behavior: 'smooth'});
         }
       }
     }, 100);
@@ -87,5 +109,11 @@ export class HeaderComponent implements OnDestroy {
   // Важно разблокировать body при уничтожении компонента
   ngOnDestroy(): void {
     this.unlockBody();
+
+    // Удаляем Headroom слушатели
+    if (this.headroom) {
+      this.headroom.destroy();
+      this.headroom = null;
+    }
   }
 }
