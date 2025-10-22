@@ -1,7 +1,9 @@
 <div class="wrapper">
-  <header-component *ngIf="showHeaderFooter"></header-component>
+  <header-component *ngIf="showHeaderFooter" ></header-component>
   <div class="main">
     <router-outlet></router-outlet>
+
+    <div class="btn-up" (click)="scrollTop()" [class.active]="showButton"></div>
   </div>
   <footer-component *ngIf="showHeaderFooter" class="footer"></footer-component>
 </div>

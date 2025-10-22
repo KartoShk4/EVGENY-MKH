@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectorRef} from '@angular/core';
+import {Component, OnInit, ChangeDetectorRef, HostListener} from '@angular/core';
 import {TitleNotifierService} from 'src/app/shared/services/title-notifier.service';
 import {VisibilityService} from "./shared/services/visability.service";
 import {filter} from 'rxjs';
@@ -14,6 +14,7 @@ declare let gtag: Function;
 })
 export class AppComponent implements OnInit {
   showHeaderFooter: boolean = true;
+  showButton = false;
 
   constructor(
     private titleNotifier: TitleNotifierService,
@@ -54,6 +55,18 @@ export class AppComponent implements OnInit {
       once: false,
       mirror: true,
       duration: 800
+    });
+  }
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.showButton = window.scrollY > 100;
+  }
+
+  scrollTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   }
 }

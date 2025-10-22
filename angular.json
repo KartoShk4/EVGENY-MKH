@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["vanilla-tilt"],
+            "allowedCommonJsDependencies": ["vanilla-tilt", "aos"],
             "outputPath": "dist/my-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",

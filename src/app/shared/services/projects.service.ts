@@ -16,7 +16,7 @@ export class ProjectsService {
       ],
       title: 'SUPER CARS',
       description: 'Лендинг автосалона с каталогом, описаниями моделей и формой заявки. Адаптивный, стильный дизайн.',
-      technologies: 'HTML, CSS, Angular, JavaScript',
+      technologies: 'HTML, CSS, Angular, TypeScript',
       siteLink: 'https://kartoshk4.github.io/cars/',
       codeLink: 'https://github.com/KartoShk4/cars-code'
     },
@@ -186,6 +186,20 @@ export class ProjectsService {
       technologies: 'HTML, SCSS, JavaScript, React, БЭМ',
       siteLink: 'https://kartoshk4.github.io/coffee-code/',
       codeLink: 'https://github.com/KartoShk4/coffee-code'
+    },
+    {
+      imageUrl: 'assets/images/pages/card/steam/steam1.webp',
+      images: [
+        'assets/images/pages/card/steam/steam1.webp',
+        'assets/images/pages/card/steam/steam2.webp',
+        'assets/images/pages/card/steam/steam3.webp',
+        'assets/images/pages/card/steam/steam4.webp',
+      ],
+      title: 'SteamPay',
+      description: 'Интерфейс для пополнения кошелька Steam с вводом аккаунта и пополнения счёта.',
+      technologies: 'HTML, SCSS, TypeScript, Angular',
+      siteLink: 'https://kartoshk4.github.io/payment-steam/',
+      codeLink: 'https://github.com/KartoShk4/payment-steam'
     },
   ]
 

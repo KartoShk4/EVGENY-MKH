@@ -1,3 +1,5 @@
+@import "../assets/styles/variables";
+
 .wrapper {
   margin: 0;
   display: flex;
@@ -7,4 +9,50 @@
 
 .main {
   flex-grow: 1;
+}
+
+.btn-up {
+  z-index: 9999;
+  width: 220px;
+  height: 220px;
+  color: #FFF;
+  position: fixed;
+  bottom: -220px;
+  right: -220px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  border: 3px solid;
+  border-image: linear-gradient(to left, #E70FAA, #13B0F5) 1;
+  transition: all .7s ease-in-out;
+  background-color: $project-dark-gray-color;
+}
+
+.btn-up.active {
+  right: -120px;
+  bottom: -120px;
+}
+
+.btn-up::before {
+  content: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDI4NC45MjkgMjg0LjkyOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjg0LjkyOSAyODQuOTI5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPjxwYXRoIGQ9Ik0xNy4xMjgsMTY3Ljg3MmMxLjkwMywxLjkwMiw0LjA5MywyLjg1NCw2LjU2NywyLjg1NGMyLjQ3NCwwLDQuNjY0LTAuOTUyLDYuNTY3LTIuODU0TDE0Mi40NjYsNTUuNjY2bDExMi4yMDgsMTEyLjIwNiAgICMxLjkwMiwyLjg1NCw2LjU2MywyLjg1NGMyLjQ3OCwwLDQuNjY4LTAuOTUyLDYuNTctMi44NTRsMTQuMjc0LTE0LjI3N2MxLjkwMi0xLjkwMiwyLjg0Ny00LjA5MywyLjg0Ny02LjU2MyAgICBjMC0yLjQ3NS0wLjk1MS00LjY2NS0yLjg0Ny02LjU2N0wxNDkuMDI4LDcuNDE5Yy0xLjkwMS0xLjkwNi00LjA4OC0yLjg1My02LjU2Mi0yLjg1M3MtNC42NjUsMC45NS02LjU2NywyLjg1M0wyLjg1NiwxNDAuNDY0ICAgIEMwLjk1LDE0Mi4zNjcsMCwxNDQuNTU0LDAsMTQ3LjAzNGMwLDIuNDY4LDAuOTUzLDQuNjU4LDIuODU2LDYuNTYxTDE3LjEyOCwxNjcuODcyeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+Cjwvc3ZnPg==);
+  transform: rotate(45deg);
+  position: relative;
+  display: block;
+  left: 60px;
+  top: 88px;
+}
+
+.btn-up::after {
+  font-family: "Poppins", sans-serif;
+  content: "ВВЕРХ";
+  transform: rotate(-45deg);
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  left: -12px;
+  top: 14px;
+}
+
+.btn-up:hover {
+  transform: rotate(45deg);
 }

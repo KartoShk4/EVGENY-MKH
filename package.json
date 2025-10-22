@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "buldGit": "ng build --base-href /EVGENY-MKH/",
+    "deployGit": "ng build --base-href /EVGENY-MKH/ && npx angular-cli-ghpages --dir=dist/my-portfolio",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

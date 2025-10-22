@@ -12,6 +12,16 @@
       padding-bottom: 315px;
       text-align: center;
 
+      @media screen and (max-width: 768px) {
+        font-size: 42px;
+        line-height: 50px;
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+        line-height: 45px;
+      }
+
       .contacts-info-title {
         color: $contacts-light-blue-color;
         padding-bottom: 20px;
